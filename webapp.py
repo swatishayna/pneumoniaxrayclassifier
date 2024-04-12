@@ -69,7 +69,7 @@ else:
   #predict
   preds= cnn.predict(pp_img)
   if preds>= 0.5:
-    out = (' W{:.2%} chances that patient is suffering from Pneumonia '.format(preds[0][0]))
+    out = (' {:.2%} chances that patient is suffering from Pneumonia '.format(preds[0][0]))
   
   else:
     out = ('{:.2%} chances that patient is not suffering from Pneumonia, Normal case'.format(1-preds[0][0]))
